@@ -7,7 +7,7 @@
 # Description : awesomeness isn't built, it is BORN.
 # File Name : capture.py
 # Creation Date : 19-04-2013
-# Last Modified Date : Fri Apr 19 14:33:57 2013
+# Last Modified Date : Fri Apr 19 16:36:49 2013
 ###################################################################################
 
 Description format: 
@@ -97,3 +97,24 @@ def Draw(xyz,gl_rgb_tex,rgb,indices):
 	glPopMatrix();
 	glDisable(GL_TEXTURE_2D);
 
+
+
+glutInit(&argc, argv);
+glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_ALPHA | GLUT_DEPTH);
+    glutInitWindowSize(640, 480);
+    glutInitWindowPosition(0, 0);
+
+    window = glutCreateWindow("LibFreenect");
+
+    glutDisplayFunc(&DrawGLScene);
+    glutIdleFunc(&DrawGLScene);
+    glutReshapeFunc(&ReSizeGLScene);
+    glutKeyboardFunc(&keyPressed);
+    glutMotionFunc(&mouseMoved);
+    glutMouseFunc(&mousePress);
+
+    InitGL(640, 480);
+
+    glutMainLoop();
+
+    return 0;
