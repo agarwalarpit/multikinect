@@ -1,7 +1,25 @@
 multikinect
 ===========
 
-This repository contains codes where I explore multiple kinect cameras connected to one computer. README
+This repository contains codes where I explore multiple kinect cameras connected to one computer, also it contains various plugins which might be required when working on the teeve game-engine.
+----------------------------
+Installing vim for OpenCL 
+----------------------------
+The link below was helpful in adding OpenCL support for vim. 
+"http://www.vim.org/scripts/script.php?script _ id=3157"
+
+The 'opencl.vim' has been put in the main folder, and the steps are: 
+install details
+Place file within /syntax 
+Edit filetype.vim: 
+
+add lines -   
+" OpenCL 
+au BufNewFile,BufRead * .cl	 setf opencl 
+
+Remove- (stop vim from recognizing * .cl as common lisp) 
+* .cl from Lisp 
+
 ----------------------------
 Installing python wrappers from libfreenect
 ----------------------------
