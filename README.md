@@ -9,7 +9,7 @@ This repository contains codes where I explore multiple kinect cameras connected
         i.e. http://openkinect.org/wiki/Getting_Started#Manual_Build_under_OSX
 
 
-<h2> Installing python plugins: <h2> 
+<h2> Installing python plugins </h2> 
 
 After installing the libfreenect libraries, as mentioned above. Just goto the /libfreenect/wrappers/python and then run the command: 
         
