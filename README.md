@@ -24,9 +24,11 @@ libusb from : http://sourceforge.net/projects/libusb/
 <h2> Parallel usage with pyusb </h2> 
 
 Input: 
+
         If you also want to use pyusb to play with the Kinect, you will need libusb-1.0.8 (it seems). Install it via homebrew and then define the _lib variable before finding the usb device:
 
 Output: 
+
         from ctypes import *
         import usb.core
         import usb.utils
